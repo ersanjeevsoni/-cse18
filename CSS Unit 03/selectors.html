@@ -38,9 +38,31 @@
             a:active{
                 color: chartreuse;
             }
-            a:visited{
+            /* a:visited{
                 color: bisque;
-            }
+            } */
+             /* ul .odd{
+                color: blue;
+             }
+             ul .even{
+                color: red;
+             } */
+              /* ul li:nth-child(odd){
+                color: blueviolet;
+              } */
+              /* ul li:nth-child(3), ul li:nth-child(5){
+                color: rgb(16, 118, 69);
+              } */
+              ul li::first-letter{
+                color: #000; font-size: 30px
+              }
+              ul li::after{
+                content: "read more";
+                color: red;
+              }
+              ::marker{
+                color: rgb(216, 129, 14);
+              }
           </style>
 </head>
 <body>
@@ -71,6 +93,13 @@
      </p>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id sit distinctio tempore, minus iure nisi illo in cum fugiat laboriosam recusandae, unde consequuntur tempora debitis dicta maiores illum labore.</p>
 
-
+     <ul>
+        <li class="odd">CSE15</li>
+        <li class="even">CSE16</li>
+        <li class="odd">CSE17</li>
+        <li class="even">CSE18</li>
+        <li class="odd">CSE19</li>
+        <li class="even">CSE20</li>
+     </ul>
 </body>
 </html>
