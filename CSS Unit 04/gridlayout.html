@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird Layout</title>
+    <style>
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-size: 30px; */
+        }
+        p{
+            /* font-size: 5vh; */
+            font-size: 2rem;
+        }
+        main{
+            width: 100%;
+            height: auto;
+            background-color: aqua;
+            display: grid;
+            /* grid-template-columns: 200px 300px auto 140px; */
+            grid-template-columns: repeat(4,1fr);
+            /* grid-template-rows: 100px 80px 500px 120px; */
+            gap: 10px;
+
+        }
+        .box{
+            background-color: #CCC;
+            height: 200px;
+        }
+        @media screen and (max-width:768px) {
+            main{
+                background-color: #F04;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 10px;
+            }  
+        }
+        @media screen and (max-width:768px) {
+            .box{
+                background-color: rgb(64, 52, 174);
+            }
+            
+        }
+
+        @media screen and (min-width:498px) and (max-width:768px) {
+            h2{
+                font-size: 32px;
+                color: #F04;
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Hello ABES</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, perspiciatis. Itaque reprehenderit animi delectus, aut eveniet doloremque nisi commodi? Error explicabo aspernatur repudiandae delectus nam sed ducimus id fuga tempore?</p>
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </main>
+    
+</body>
+</html>
